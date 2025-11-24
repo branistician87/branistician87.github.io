@@ -1,0 +1,208 @@
+body {
+    background-color: #0d1b1e; /* deep teal background */
+    color: #e0f2f1; /* light teal text */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #0d1b1e; /* dark teal */
+    cursor: default;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004d4d !important; 
+    border-bottom: 2px solid #26a69a;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: #4dd0e1; 
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+p { font-size: 1.1rem; line-height: 1.6; }
+
+/* Cards */
+.card {
+    background-color: #102a2c !important; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+/* Links */
+a, .nav-link {
+    color: #80cbc4;
+    transition: color 0.2s;
+}
+a:hover, .nav-link:hover {
+    color: #4dd0e1 !important;
+}
+
+#typed-output {
+    font-size: 1.5rem;
+    border-right: 2px solid #00bfa5;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+/* Bullets */
+ul li {
+    color: #e0f2f1;
+    line-height: 1.5;
+}
+
+/* Muted small text */
+.card small.text-muted {
+    color: #b0bec5 !important;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li a {
+    color: #00bfa5 !important;
+    text-decoration: underline;
+}
+li a:hover {
+    color: #1de9b6 !important;
+}
+
+.card { color: #e0f2f1; }
+
+/* Inline content links */
+.content a:link,
+.content a:visited { 
+    color: #00bfa5; 
+    text-decoration: underline; 
+}
+.content a:hover,
+.content a:active { 
+    color: #1de9b6; 
+}
+
+.card a:not(.stretched-link) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tech Stack */
+.tech-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tech-title {
+    margin-bottom: 15px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tech-icon {
+    width: 60px; 
+    height: 60px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    margin: 6px;
+}
+
+.tech-icon i { 
+    font-size: 42px;
+    line-height: 1;
+}
+
+.tech-icon img { 
+    max-height: 40px;  
+    width: auto; 
+    display: block; 
+}
+
+/* Image container */
+.image-container {
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Graduation photos */
+.grad-photo {
+    max-height: 450px;
+    width: auto;      
+    object-fit: contain;
+    border-radius: 15px !important;
+}
+
+/* Degree photos */
+.degree-photo {
+    max-height: 220px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 15px !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .card img {
+        max-height: 180px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .grad-photo {
+        max-height: 400px;
+    }
+
+    .degree-photo {
+        max-height: 180px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    p.lead {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+/* Keep badges above stretched links */
+.badge {
+    position: relative;
+    z-index: 5;
+}
+
+.education-section .row img {
+    display: block;
+    margin: 0 auto;
+}
+
