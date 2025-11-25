@@ -1,6 +1,6 @@
 body {
-    background-color: #0b1020;   /* new background */
-    color: #e8edf5;              /* off-white text */
+    background-color: #003B5C; /* Seawolf Blue */
+    color: #FFFFFF;           /* White text */
     font-family: 'Segoe UI', Roboto, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,14 +16,14 @@ html, body {
 
 /* Navbar */
 .navbar {
-    background-color: #12263a !important;  /* darker navy */
-    border-bottom: 2px solid #f4b41a;      /* gold accent */
-
+    background-color: #003B5C !important; /* Deep SSU blue */
+    border-bottom: 3px solid #FFC72C;     /* Gold accent */
 }
+
 
 /* Headings */
 h1, h2, h3, h4 {
-    color: #f4b41a;    /* gold headings */
+    color: #0076B6; /* Bright SSU blue */
     font-weight: 600;
 }
 
@@ -51,19 +51,18 @@ p { font-size: 1.1rem; line-height: 1.6; }
 
 /* Links */
 a, .nav-link {
-    color: #4f8fbf;
-    transition: color 0.2s;
+    color: #FFC72C;
 }
+
 a:hover, .nav-link:hover {
-    color: #f4b41a !important;
+    color: #FFFFFF !important;
 }
 
 #typed-output {
-    font-size: 1.5rem;
-    border-right: 2px solid #00bfa5;
-    padding-right: 5px;
-    white-space: nowrap;
+    color: #FFC72C;
+    border-right: 2px solid #FFC72C;
 }
+
 
 /* Bullets */
 ul li {
@@ -72,8 +71,10 @@ ul li {
 }
 
 /* Muted small text */
-.card small.text-muted {
-    color: #b0bec5 !important;
+.card {
+    background-color: #002A40 !important; /* darker navy tone */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 ul {
