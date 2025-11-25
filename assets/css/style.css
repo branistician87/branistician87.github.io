@@ -1,6 +1,6 @@
 body {
-    background-color: #0d1b1e; /* deep teal background */
-    color: #e0f2f1; /* light teal text */
+    background-color: #0b1020;   /* new background */
+    color: #e8edf5;              /* off-white text */
     font-family: 'Segoe UI', Roboto, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,13 +16,14 @@ html, body {
 
 /* Navbar */
 .navbar {
-    background-color: #004d4d !important; 
-    border-bottom: 2px solid #26a69a;
+    background-color: #12263a !important;  /* darker navy */
+    border-bottom: 2px solid #f4b41a;      /* gold accent */
+
 }
 
 /* Headings */
 h1, h2, h3, h4 {
-    color: #4dd0e1; 
+    color: #f4b41a;    /* gold headings */
     font-weight: 600;
 }
 
@@ -50,11 +51,11 @@ p { font-size: 1.1rem; line-height: 1.6; }
 
 /* Links */
 a, .nav-link {
-    color: #80cbc4;
+    color: #4f8fbf;
     transition: color 0.2s;
 }
 a:hover, .nav-link:hover {
-    color: #4dd0e1 !important;
+    color: #f4b41a !important;
 }
 
 #typed-output {
