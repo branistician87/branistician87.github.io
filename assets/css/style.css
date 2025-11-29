@@ -70,7 +70,7 @@ a:hover, .nav-link:hover {
 
 /* Typed text line */
 #typed-output {
-    color: var(--gold);
+    color: #00AEEF;
     border-right: 2px solid var(--gold);
 }
 
