@@ -1,107 +1,112 @@
-body {
-    background-color: #003B5C; /* Seawolf Blue */
-    color: #FFFFFF;           /* White text */
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
+/* ===========================
+   Sonoma State Color Variables
+   =========================== */
+:root {
+    --navy: #003B5C;        /* Seawolf Blue */
+    --navy-deep: #002A40;   /* Darker navy for cards */
+    --sky: #00AEEF;         /* Sky Blue accent */
+    --white: #FFFFFF;
+    --gray-light: #E0F2F1;
+    --gold: #FFC72C;        /* Gold accent */
 }
 
+/* ===========================
+   Base
+   =========================== */
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #0d1b1e; /* dark teal */
+    padding: 0;
+    background-color: var(--navy);  /* main background */
+    color: var(--white);            /* default text */
+    font-family: 'Segoe UI', Roboto, sans-serif;
     cursor: default;
     overflow-x: hidden;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #003B5C !important; /* Deep SSU blue */
-    border-bottom: 3px solid #FFC72C;     /* Gold accent */
+    background-color: var(--navy) !important;
+    border-bottom: 3px solid var(--gold);  /* gold divider */
 }
-
 
 /* Headings */
 h1, h2, h3, h4 {
-    color: #0076B6; /* Bright SSU blue */
+    color: var(--sky);   /* bright SSU sky blue */
     font-weight: 600;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
 h1 { font-size: 4rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 2rem; }
-p { font-size: 1.1rem; line-height: 1.6; }
 
 /* Cards */
 .card {
-    background-color: #102a2c !important; 
+    background-color: var(--navy-deep) !important;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);  /* subtle dark shadow */
     transition: transform 0.2s ease-in-out;
+    color: var(--gray-light);
 }
+
 .card:hover {
     transform: translateY(-5px);
-    transition: 0.2s ease-in-out;
 }
 
 /* Links */
 a, .nav-link {
-    color: #FFC72C;
+    color: var(--gold);
+    text-decoration: none;
 }
 
 a:hover, .nav-link:hover {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
+/* Typed text line */
 #typed-output {
-    color: #FFC72C;
-    border-right: 2px solid #FFC72C;
+    color: var(--gold);
+    border-right: 2px solid var(--gold);
 }
 
-
-/* Bullets */
-ul li {
-    color: #e0f2f1;
-    line-height: 1.5;
-}
-
-/* Muted small text */
-.card {
-    background-color: #002A40 !important; /* darker navy tone */
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-
+/* Lists */
 ul {
     padding-left: 20px;
 }
 
-li a {
-    color: #00bfa5 !important;
-    text-decoration: underline;
-}
-li a:hover {
-    color: #1de9b6 !important;
+ul li {
+    color: var(--gray-light);
+    line-height: 1.5;
 }
 
-.card { color: #e0f2f1; }
+/* Links inside list items */
+li a {
+    color: var(--sky) !important;
+    text-decoration: underline;
+}
+
+li a:hover {
+    color: var(--gold) !important;
+}
 
 /* Inline content links */
 .content a:link,
 .content a:visited { 
-    color: #00bfa5; 
+    color: var(--sky);
     text-decoration: underline; 
 }
+
 .content a:hover,
 .content a:active { 
-    color: #1de9b6; 
+    color: var(--gold);
 }
 
+/* Keep card links clickable above stretched-link overlays */
 .card a:not(.stretched-link) {
     position: relative;
     z-index: 1;
@@ -115,6 +120,7 @@ li a:hover {
 
 .tech-title {
     margin-bottom: 15px;
+    color: var(--sky);
 }
 
 .tech-icons {
@@ -207,4 +213,5 @@ li a:hover {
     display: block;
     margin: 0 auto;
 }
+
 
